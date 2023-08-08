@@ -1,0 +1,62 @@
+/* Add your CSS styling for the gallery */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: lightskyblue;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+figure {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+figcaption {
+  font-style: italic;
+  color: #555;
+}
+
+.thumbnails-container {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  cursor: pointer;
+  margin: 5px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.thumbnail:hover {
+  border-color: whitesmoke;
+}
+
+.thumbnail.active {
+  border-color: yellow;
+}
+
+/* Optional: Add a subtle box shadow to the featured image */
+figure img {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Add a box shadow to the thumbnails on hover */
+.thumbnail:hover {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
